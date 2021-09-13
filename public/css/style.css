@@ -13,6 +13,11 @@ body {
   flex-direction: column;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 header {
   background-color: #ccc;
   font-size: 3rem;
