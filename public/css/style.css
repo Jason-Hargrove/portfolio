@@ -19,6 +19,23 @@ body {
   background-image: url(../img/trefoil-circle.jpg);
 }
 
+/* ↓↓↓↓↓ DELETE when done ↓↓↓↓↓ */
+h1.construction {
+  color: red;
+  font-size: 5vh;
+  text-align: center;
+}
+/* ↑↑↑↑↑ DELETE when done ↑↑↑↑↑ */
+
+a {
+  text-decoration: none;
+  color: yellow;
+}
+
+h2 {
+  color: rgb(255,0,255);
+}
+
 img {
   max-width: 100%;
   height: auto;
