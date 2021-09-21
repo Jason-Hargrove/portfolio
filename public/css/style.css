@@ -18,15 +18,36 @@ img {
   height: auto;
 }
 
-header {
-  background-color: #ccc;
-  font-size: 3rem;
+aside {
+  background-color: #f5c622;
 }
 
+
+/* ↓↓↓↓↓↘ Start - Header ↙↓↓↓↓↓ */
+header {
+  margin: 2em;
+  text-align: center;
+}
+
+header > img.logo {
+  max-width: 300px;
+  height: auto;
+}
+
+header > h1.portfolio {
+  text-align: right;
+}
+/* ↑↑↑↑↑↖ End - Header ↗↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓↘ Start - Footer ↙↓↓↓↓↓ */
 footer {
   background-color: #ccc;
 }
+/* ↑↑↑↑↑↖ End - Footer ↗↑↑↑↑↑ */
 
+
+/* ↓↓↓↓↓↘ Start - Gallery ↙↓↓↓↓↓ */
 main {
   display: flex;
   flex-direction: column;
@@ -35,13 +56,30 @@ main {
 
 article.main {
   background-color: #00c9f2;
+  display: flex;
+  flex-flow: row wrap;
   flex: 1;
 }
+/* ↑↑↑↑↑↖ End - Gallery ↗↑↑↑↑↑ */
 
-aside {
-  background-color: #f5c622;
+
+/* ↓↓↓↓↓↘ Start - About Me ↙↓↓↓↓↓ */
+aside.sidebar1 {
+
 }
+/* ↑↑↑↑↑↖ End - About Me ↗↑↑↑↑↑ */
 
+
+/* ↓↓↓↓↓↘ Start - Contact ↙↓↓↓↓↓ */
+
+
+aside.sidebar2 {
+
+}
+/* ↑↑↑↑↑↖ End - Contact ↗↑↑↑↑↑ */
+
+
+/* @@@@@ Start - Media Query @@@@@ */
 @media (min-width: 768px) {
   main {
     width: 80%;
@@ -57,3 +95,7 @@ aside {
     order: -1;
   }
 }
+/* @@@@@ End - Media Query @@@@@ */
+
+
+/* ☢↔↔↔↔↔ la fin ↔↔↔↔↔☢ */
