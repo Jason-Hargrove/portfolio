@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;0,900;1,600&display=swap');
 
+/*
+Color Pallette:
+magenta = rgb(255,0,255)
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +16,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-image: url(../img/trefoil-circle.jpg);
 }
 
 img {
@@ -27,6 +33,7 @@ aside {
 header {
   margin: 2em;
   text-align: center;
+
 }
 /* Start - Logo Animation */
 @keyframes slidein {
@@ -69,6 +76,7 @@ header > img.logo {
 header > h1.portfolio {
   text-align: right;
   font-size: 6vh;
+  color: rgb(255,0,255);
   margin-right: 10vw;
   animation: fadeIn ease 10s;
   animation-iteration-count: 1;
