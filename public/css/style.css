@@ -28,15 +28,53 @@ header {
   margin: 2em;
   text-align: center;
 }
+/* Start - Logo Animation */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
 
 header > img.logo {
   max-width: 300px;
   height: auto;
+  margin-bottom: -50px;
+  animation-name: slidein;
+  animation-delay: 0s;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+.logo:hover {
+  animation-name: slidein;
+  animation-delay: unset, 0s;
+  animation-duration: 0s, 0.5s;
+  animation-iteration-count: 0;
+}
+/* End - Logo Animaion */
+/* Start - "portfolio" Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 header > h1.portfolio {
   text-align: right;
+  font-size: 6vh;
+  margin-right: 10vw;
+  animation: fadeIn ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+/* End - "portfolio" Animation */
 /* ↑↑↑↑↑↖ End - Header ↗↑↑↑↑↑ */
 
 
@@ -93,6 +131,12 @@ aside.sidebar2 {
 
   .sidebar1 {
     order: -1;
+  }
+
+  header > h1.portfolio {
+    font-size: 8vh;
+    margin-right: 25vw;
+    margin-bottom: -20px;
   }
 }
 /* @@@@@ End - Media Query @@@@@ */
