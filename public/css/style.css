@@ -6,6 +6,7 @@ magenta = rgb(255,0,255)
 yellow = rgba(255, 255, 126, 1)
 orange = rgba(255, 203, 5, 1)
 black = rgba(0, 0, 0, 0.7)
+white = rgba(255,255,255, 0.3)
 */
 
 * {
@@ -21,14 +22,6 @@ body {
   flex-direction: column;
   background-image: url(../img/trefoil-circle.jpg);
 }
-
-/* ↓↓↓↓↓ DELETE when done ↓↓↓↓↓ */
-h1.construction {
-  color: red;
-  font-size: 5vh;
-  text-align: center;
-}
-/* ↑↑↑↑↑ DELETE when done ↑↑↑↑↑ */
 
 a {
   text-decoration: none;
@@ -53,7 +46,6 @@ aside {
 header {
   margin: 2em;
   text-align: center;
-
 }
 
 /* Start - Logo Animation */
@@ -115,18 +107,43 @@ footer {
 /* ↑↑↑↑↑↖ End - Footer ↗↑↑↑↑↑ */
 
 
-/* ↓↓↓↓↓↘ Start - Gallery ↙↓↓↓↓↓ */
+/* ↓↓↓↓↓↘ Start - Main ↙↓↓↓↓↓ */
 main {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
-article.main {
-  background-color: #00c9f2;
+/* ↓↓↓↓↓↘ Start - Gallery ↙↓↓↓↓↓ */
+main > article.main {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   flex: 1;
+  align-items: center;
+  justify-content: start;
+  background-image: url(../img/splatter-background.jpg);
+  background-position: right 10% bottom 45%;
+  background-size:cover;
+  border: 1mm ridge rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0 1em;
+  padding: 0.5em 0;
+}
+
+main > article.main > article {
+  /* border: 1mm solid red; */
+  margin: 1em;
+  align-self: center;
+  text-align: center;
+
+}
+
+main > article.main > article > a > img.for-g-c-logo {
+  background-color: rgba(255,255,255, 0.8);
+}
+
+main > article.main > article > h1 {
+  margin: 0.2em 0;
 }
 /* ↑↑↑↑↑↖ End - Gallery ↗↑↑↑↑↑ */
 
@@ -196,7 +213,7 @@ aside.sidebar2 > a > span > i.far:hover {
 }
 /* End - FA Animation */
 /* ↑↑↑↑↑↖ End - Contact ↗↑↑↑↑↑ */
-
+/* ↑↑↑↑↑↖ End - Main ↗↑↑↑↑↑ */
 
 /* @@@@@ Start - Media Query @@@@@ */
 @media (min-width: 768px) {
@@ -219,6 +236,33 @@ aside.sidebar2 > a > span > i.far:hover {
     margin-right: 25vw;
     margin-bottom: -20px;
   }
+
+
+  /* ↓↓↓↓↓↘ Start - Gallery - @media ↙↓↓↓↓↓ */
+  main > article.main {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  main > article.main > article {
+    /* border: 1mm solid red; */
+    max-width: 200px;
+    align-self: center;
+    text-align: center;
+
+  }
+
+  main > article.main > article > a > img.for-g-c-logo {
+  }
+
+  main > article.main > article > h1 {
+    /* margin: 0.2em 0; */
+  }
+  /* ↑↑↑↑↑↖ End - Gallery - @media ↗↑↑↑↑↑ */
+
 
   /* ↓↓↓↓↓↘ Start - Contact - @media ↙↓↓↓↓↓ */
   aside.sidebar2 {
