@@ -3,6 +3,9 @@
 /*
 Color Pallette:
 magenta = rgb(255,0,255)
+yellow = rgba(255, 255, 126, 1)
+orange = rgba(255, 203, 5, 1)
+black = rgba(0, 0, 0, 0.7)
 */
 
 * {
@@ -29,7 +32,7 @@ h1.construction {
 
 a {
   text-decoration: none;
-  color: yellow;
+  color: rgb(255,0,255);
 }
 
 h2 {
@@ -42,7 +45,7 @@ img {
 }
 
 aside {
-  background-color: #f5c622;
+  margin: 1em;
 }
 
 
@@ -52,6 +55,7 @@ header {
   text-align: center;
 
 }
+
 /* Start - Logo Animation */
 @keyframes slidein {
   from {
@@ -80,6 +84,7 @@ header > img.logo {
   animation-iteration-count: 0;
 }
 /* End - Logo Animaion */
+
 /* Start - "portfolio" Animation */
 @keyframes fadeIn {
   0% {
@@ -105,7 +110,7 @@ header > h1.portfolio {
 
 /* ↓↓↓↓↓↘ Start - Footer ↙↓↓↓↓↓ */
 footer {
-  background-color: #ccc;
+ display: none;
 }
 /* ↑↑↑↑↑↖ End - Footer ↗↑↑↑↑↑ */
 
@@ -128,17 +133,67 @@ article.main {
 
 /* ↓↓↓↓↓↘ Start - About Me ↙↓↓↓↓↓ */
 aside.sidebar1 {
+  color: rgba(255, 255, 126, 1);
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1.5mm ridge rgb(255,0,255);
+  padding: 1em;
+}
 
+aside.sidebar1 > h2 {
+  margin-bottom: 0.1em;
 }
 /* ↑↑↑↑↑↖ End - About Me ↗↑↑↑↑↑ */
 
 
 /* ↓↓↓↓↓↘ Start - Contact ↙↓↓↓↓↓ */
-
-
 aside.sidebar2 {
-
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(255, 203, 5, 0.6), rgba(255, 255, 126, 0.6));
+  padding: 1em;
 }
+
+aside.sidebar2 > h2 {
+  margin-bottom: 0.3em;
+  color: rgba(255, 255, 126, 1);
+  text-shadow: 1px 1px 0px black, 0 0 1em magenta, 0 0 0.2em magenta;
+}
+
+aside.sidebar2 > a > h3 {
+  color: rgba(255, 255, 126, 1);
+  text-shadow: 0px 0px 2px magenta;
+  margin-top: 0.5em;
+}
+
+/* Start - FA Animation */
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  80% { transform: rotate(90deg); }
+  85% { transform: rotate(360deg); }
+  95% { transform: rotate(-360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+aside.sidebar2 > a > span > i.fab {
+  color: Black;
+  animation: wiggle 8s;
+  animation-delay: 0s;
+}
+
+aside.sidebar2 > a > span > i.far {
+  color: Black;
+  animation: wiggle 8s;
+  animation-delay: 0s;
+}
+
+aside.sidebar2 > a > span > i.fab:hover {
+  animation: none;
+}
+
+aside.sidebar2 > a > span > i.far:hover {
+  animation: none;
+}
+/* End - FA Animation */
 /* ↑↑↑↑↑↖ End - Contact ↗↑↑↑↑↑ */
 
 
@@ -163,6 +218,37 @@ aside.sidebar2 {
     margin-right: 25vw;
     margin-bottom: -20px;
   }
+
+/* ↓↓↓↓↓↘ Start - Footer - @media ↙↓↓↓↓↓ */
+  footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 1em;
+  }
+
+  footer > a {
+    color: Black;
+  }
+
+  footer > a > h3 {
+    margin-right: 5vw;
+  }
+
+  footer > a > span > i.fab {
+    color: rgba(255, 203, 5, 1);
+    font-size: 3em;
+    margin: 0 0.1em 0 0.5em;
+  }
+
+  footer > a > span > i.far {
+    color: rgba(255, 203, 5, 1);
+    font-size: 3em;
+    margin: 0 0.1em 0 0.5em;
+  }
+  /* ↑↑↑↑↑↖ End - Footer @media ↗↑↑↑↑↑ */
+
+
 }
 /* @@@@@ End - Media Query @@@@@ */
 
