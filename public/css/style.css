@@ -41,7 +41,6 @@ aside {
   margin: 1em;
 }
 
-
 /* ↓↓↓↓↓↘ Start - Header ↙↓↓↓↓↓ */
 header {
   margin: 2em;
@@ -97,15 +96,14 @@ header > h1.portfolio {
   animation-fill-mode: forwards;
 }
 /* End - "portfolio" Animation */
-/* ↑↑↑↑↑↖ End - Header ↗↑↑↑↑↑ */
 
+/* ↑↑↑↑↑↖ End - Header ↗↑↑↑↑↑ */
 
 /* ↓↓↓↓↓↘ Start - Footer ↙↓↓↓↓↓ */
 footer {
  display: none;
 }
 /* ↑↑↑↑↑↖ End - Footer ↗↑↑↑↑↑ */
-
 
 /* ↓↓↓↓↓↘ Start - Main ↙↓↓↓↓↓ */
 main {
@@ -121,7 +119,7 @@ main > article.main {
   flex: 1;
   align-items: center;
   justify-content: start;
-  background-image: url(../img/splatter-background.jpg);
+  background-image: url(../img/splatter-background.png);
   background-position: right 10% bottom 45%;
   background-size:cover;
   border: 1mm ridge rgba(0, 0, 0, 0.1);
@@ -131,11 +129,9 @@ main > article.main {
 }
 
 main > article.main > article {
-  /* border: 1mm solid red; */
   margin: 1em;
   align-self: center;
   text-align: center;
-
 }
 
 main > article.main > article > a > img.for-g-c-logo {
@@ -146,7 +142,6 @@ main > article.main > article > h1 {
   margin: 0.2em 0;
 }
 /* ↑↑↑↑↑↖ End - Gallery ↗↑↑↑↑↑ */
-
 
 /* ↓↓↓↓↓↘ Start - About Me ↙↓↓↓↓↓ */
 aside.sidebar1 {
@@ -160,7 +155,6 @@ aside.sidebar1 > h2 {
   margin-bottom: 0.1em;
 }
 /* ↑↑↑↑↑↖ End - About Me ↗↑↑↑↑↑ */
-
 
 /* ↓↓↓↓↓↘ Start - Contact ↙↓↓↓↓↓ */
 aside.sidebar2 {
@@ -212,7 +206,9 @@ aside.sidebar2 > a > span > i.far:hover {
   animation: none;
 }
 /* End - FA Animation */
+
 /* ↑↑↑↑↑↖ End - Contact ↗↑↑↑↑↑ */
+
 /* ↑↑↑↑↑↖ End - Main ↗↑↑↑↑↑ */
 
 /* @@@@@ Start - Media Query @@@@@ */
@@ -229,6 +225,8 @@ aside.sidebar2 > a > span > i.far:hover {
 
   .sidebar1 {
     order: -1;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   header > h1.portfolio {
@@ -236,7 +234,6 @@ aside.sidebar2 > a > span > i.far:hover {
     margin-right: 25vw;
     margin-bottom: -20px;
   }
-
 
   /* ↓↓↓↓↓↘ Start - Gallery - @media ↙↓↓↓↓↓ */
   main > article.main {
@@ -248,21 +245,11 @@ aside.sidebar2 > a > span > i.far:hover {
   }
 
   main > article.main > article {
-    /* border: 1mm solid red; */
     max-width: 200px;
     align-self: center;
     text-align: center;
-
-  }
-
-  main > article.main > article > a > img.for-g-c-logo {
-  }
-
-  main > article.main > article > h1 {
-    /* margin: 0.2em 0; */
   }
   /* ↑↑↑↑↑↖ End - Gallery - @media ↗↑↑↑↑↑ */
-
 
   /* ↓↓↓↓↓↘ Start - Contact - @media ↙↓↓↓↓↓ */
   aside.sidebar2 {
@@ -273,6 +260,7 @@ aside.sidebar2 > a > span > i.far:hover {
     align-items: flex-start;
     background: linear-gradient(rgba(255, 203, 5, 0.6), rgba(255, 255, 126, 0.6));
     padding: 1em;
+    margin-bottom: 0;
   }
 
   aside.sidebar2 > h2 {
@@ -318,10 +306,7 @@ aside.sidebar2 > a > span > i.far:hover {
     margin: 0 0.1em 0 0.5em;
   }
   /* ↑↑↑↑↑↖ End - Footer @media ↗↑↑↑↑↑ */
-
-
 }
 /* @@@@@ End - Media Query @@@@@ */
-
 
 /* ☢↔↔↔↔↔ la fin ↔↔↔↔↔☢ */
