@@ -145,6 +145,15 @@ main > article.main > article > a > img.for-g-c-logo {
 main > article.main > article > h1 {
   margin: 0.2em 0;
 }
+
+main > article.main > article > a > h2 {
+  margin: 0.2em 0;
+  font-size: 1em;
+}
+
+main > article.main > article > a > h2:hover {
+  color: rgba(255, 203, 5, 1);
+}
 /* ↑↑↑↑↑↖ End - Gallery ↗↑↑↑↑↑ */
 
 /* ↓↓↓↓↓↘ Start - About Me ↙↓↓↓↓↓ */
