@@ -91,10 +91,9 @@ header > img.logo {
 }
 
 header > h1.portfolio {
-  text-align: right;
-  font-size: 6vh;
-  color: rgb(255,0,255);
-  margin-right: 10vw;
+  font-size: 4em;
+  color: rgba(255, 0, 255, 0.7);
+  margin-bottom: -20px;
   animation: fadeIn ease 10s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -248,12 +247,6 @@ aside.sidebar2 > a > span > i.far:hover {
     order: -1;
     margin-top: 0;
     margin-bottom: 0;
-  }
-
-  header > h1.portfolio {
-    font-size: 8vh;
-    margin-right: 25vw;
-    margin-bottom: -20px;
   }
 
   /* ↓↓↓↓↓↘ Start - Gallery - @media ↙↓↓↓↓↓ */
