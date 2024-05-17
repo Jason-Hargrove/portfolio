@@ -8,6 +8,6 @@ A Software Engineer with a background in fine art and graphic design, able to ta
 
 # Links
 
-[__This Project on Heroku__]('')
+[**This Project on Heroku**](https://jason-hargrove-portfolio-5abbf0f5084c.herokuapp.com/)
 
-[__My Personal Website__](http://www.jasonhargroveart.com/)
+[**My Personal Website**](http://www.jasonhargroveart.com/)
