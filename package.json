@@ -6,10 +6,10 @@
     "start": "node server.js"
   },
   "engines": {
-  "node": "14.17.0"
-},
+    "node": "14.17.0"
+  },
   "name": "portfolio",
-  "description": "I’m a Software Engineer with a background in fine art. I tackle hidden problems by throwing myself into my work, finding connections between unrelated things, and turning my thoughts into something real. I believe the fear of the unknown can be overcome with a well designed product, and I’m passionate about presenting it in a unique way. My background in graphic design and my experience as a street artist enables me to approach each project with a spirit for communicating graphically to provoke a reaction.",
+  "description": "A visually stunning portfolio website showcasing my skills as a full-stack developer and visual artist. Seamlessly blending creativity and technology to craft unique digital experiences.",
   "version": "1.0.0",
   "main": "server.js",
   "devDependencies": {},
