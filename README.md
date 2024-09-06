@@ -26,6 +26,36 @@ To run this application locally, follow these steps:
 
    This will start the server, and it will be accessible at http://localhost:3000 by default.
 
+## Heroku
+
+To push your updated project to Heroku, follow these steps:
+
+1. **Login to Heroku:** If you're not already logged in, open your terminal and run:
+
+   ```zsh
+   heroku login
+   ```
+
+2. **Add Heroku Remote (if not already added):** If the Heroku remote isn't linked to your project, add it by running:
+
+   ```zsh
+   heroku git:remote -a <your-heroku-app-name>
+   ```
+
+3. **Push to Heroku:** Once you've committed your changes to GitHub and your Heroku remote is set, push the changes to Heroku by running:
+
+   ```zsh
+   git push heroku main
+   ```
+
+4. **Check Logs:** After pushing, you can check the logs to make sure the deployment was successful by running:
+
+   ```zsh
+   heroku logs --tail
+   ```
+
+   This should deploy your updated code to the existing Heroku app.
+
 # Links
 
 [**This Project on Heroku**](https://jason-hargrove-portfolio-5abbf0f5084c.herokuapp.com/)
